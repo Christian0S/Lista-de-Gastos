@@ -112,3 +112,44 @@ ul li:last-child {
     color: #fff;
 
 }
+
+
+/* Estilo del input original (ocultarlo) */
+input[type="file"] {
+    display: none; /* Ocultar el input original */
+}
+
+/* Estilo del botón personalizado */
+.custom-file-upload {
+    width: fit-content;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 10px 0; /* Espaciado alrededor del botón */
+    padding: 10px 40px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    background-color: #1875E8; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.custom-file-upload:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Efecto al estar en foco */
+.custom-file-upload:focus {
+    outline: none; /* Quitar el borde de enfoque */
+    background-color: #4cae4c; /* Color de fondo al estar en foco */
+}
+
+
+.Fechas{
+    font-size: 1rem;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

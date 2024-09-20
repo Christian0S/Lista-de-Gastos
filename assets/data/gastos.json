@@ -1,0 +1,63 @@
+[
+    {
+      "nombre": "ALQUILER",
+      "valor": 1200000,
+      "fecha": "01/09/2024"
+    },
+    {
+      "nombre": "SUPER MERCADO",
+      "valor": 450000,
+      "fecha": "01/09/2024"
+    },
+    {
+      "nombre": "SERVICIO DE AGUA",
+      "valor": 50000,
+      "fecha": "10/09/2024"
+    },
+    {
+      "nombre": "SERVICIO DE LUZ",
+      "valor": 70000,
+      "fecha": "10/09/2024"
+    },
+    {
+      "nombre": "PAN",
+      "valor": 600009,
+      "fecha": "20/09/2024"
+    },
+    {
+      "nombre": "US",
+      "valor": 34234,
+      "fecha": "20/09/2024"
+    },
+    {
+      "nombre": "TRANSPORTE",
+      "valor": 80000,
+      "fecha": "20/09/2024"
+    },
+    {
+      "nombre": "COLEGIO",
+      "valor": 300000,
+      "fecha": "25/09/2024"
+    },
+    {
+      "nombre": "MEDICINAS",
+      "valor": 120000,
+      "fecha": "28/09/2024"
+    },
+    {
+      "nombre": "ENTRETENIMIENTO",
+      "valor": 200000,
+      "fecha": "30/09/2024"
+    },
+    {
+      "nombre": "CENA FAMILIAR",
+      "valor": 250000,
+      "fecha": "30/09/2024"
+    },
+    {
+      "nombre": "JUGUETES",
+      "valor": 150000,
+      "fecha": "30/09/2024"
+    }
+  ]
+  

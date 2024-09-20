@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,20 +12,36 @@
     <div class="main-container">
         <div class="container">
             <div class="img-container">
-                <img src="./assets/img/titulo.png" />
+                <img src="./assets/img/titulo.png" alt="Título">
             </div>
             <div class="form-group">
-                <input type="text" id="nombreGasto" placeholder="Nombre del gasto">
-                <input type="number" id="valorGasto" placeholder="Valor del gasto" min="0" step="0.01">
+                <input type="text" id="nombreGasto" placeholder="Nombre del gasto" required>
+                <input type="text" id="valorGasto" placeholder="COP 0.00" required oninput="formatearValor(this)" />
                 <button id="botonFormulario" onclick='agregar()'>Agregar Gasto</button>
             </div>
-            <ul id="listaDeGastos">
-            </ul>
+
+            <ul id="listaDeGastos"></ul>
             <div class="total">
                 Total Mensual: COP$ <span id="totalGastos">0.00</span>
             </div>
+
+            <!-- Contenedor para los botones y el menú de selección de fecha -->
+            <div class="acciones">
+                <div class="fecha-container">
+                    <label for="menuFechas">Selecciona la fecha:</label>
+                    <select id="menuFechas" class="Fechas" onchange="actualizarListaDeGastosPorFecha(this.value)">
+                        <option value="">--Seleccione una fecha--</option>
+                    </select>
+                </div>
+                <button onclick="exportarDatos()">Exportar Gastos</button>
+                <button class="custom-file-upload" onclick="document.getElementById('fileInput').click();">
+                    Cargar Gastos (JSON)
+                </button>
+                <input type="file" id="fileInput" accept=".json" onchange="importarDatos(event)" style="display: none;">
+            </div>
         </div>
     </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 
